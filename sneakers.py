@@ -15,9 +15,6 @@ class ShoeContainer:
 
 class Footwear:
 
-    """ The `Footwear` class in Python represents a type of footwear with attributes
-    for colour, brand, and style.
-    """
     def __init__(self, colour, brand, style):
         self.colour = colour
         self.brand = brand
