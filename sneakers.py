@@ -39,6 +39,26 @@ class Footwear:
 
         return shoe
 
+
+class ReadFile:
+    
+    def __init__(self) -> None:
+        pass
+
+    def read_file(self, filename):
+
+        with open(filename, 'r') as f:
+            for line in f:
+                format_line = line.strip().split(';')
+                colour = format_line[0]
+                brand = format_line[1]
+                style = format_line[2]
+
+                shoe = Footwear(colour, brand, style)
+                print(shoe)
+
+
+
 test_closet = ShoeContainer()
 test_shoe = Footwear("Black", "Clarks", "Boot")
 second_test_shoe = Footwear("Silver", "Nike", "Running")
@@ -48,3 +68,5 @@ test_closet.add_shoe(test_shoe)
 print(test_closet.show_items())
 test_closet.add_shoe(second_test_shoe)
 print(test_closet.show_items())
+read_test = ReadFile()
+read_test.read_file('sneakers.txt')
