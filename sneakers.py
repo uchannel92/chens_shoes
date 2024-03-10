@@ -42,7 +42,7 @@ class Footwear:
 test_closet = ShoeContainer()
 test_shoe = Footwear("Black", "Clarks", "Boot")
 second_test_shoe = Footwear("Silver", "Nike", "Running")
-print(test_shoe)
+print(test_shoe, second_test_shoe)
 print(test_closet.show_items())
 test_closet.add_shoe(test_shoe)
 print(test_closet.show_items())
