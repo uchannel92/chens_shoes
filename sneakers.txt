@@ -1,0 +1,5 @@
+Silver;Nike;lifestyle
+Black;Clarks;boots
+Yellow;Adidas Yeezy;lifestyle
+Black;Asics;running
+Blue;New Balance;Lifestyle
