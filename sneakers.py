@@ -24,6 +24,20 @@ class Footwear:
     def __repr__(self):
         shoe = f"Footwear({self.colour}, {self.brand}, {self.style})"
         return shoe
+    
+
+    def __str__(self):
+
+        shoe = ''
+        shoe += f"\n{'='*50}\n" # header
+        shoe += f"Colour: {self.colour}\n" # item colour
+        shoe += f"{'-'*50}\n"
+        shoe += f"Brand: {self.brand}\n" # item brand
+        shoe += f"{'-'*50}\n"
+        shoe += f"Style: {self.style}\n" # item style
+        shoe += f"{'='*50}\n" # footer
+
+        return shoe
 
 test_closet = ShoeContainer()
 test_shoe = Footwear("Black", "Clarks", "Boot")
